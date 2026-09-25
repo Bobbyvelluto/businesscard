@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Maurizio Arena - PLATÒ Srl</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0f17;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+      font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .card-container {
+      width: 100%;
+      max-width: 350px;
+      background: #111827;
+      border-radius: 24px;
+      border: 1.5px solid #00aeef;
+      box-shadow: 0 12px 32px rgba(0, 174, 239, 0.2);
+      padding: 24px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Logo tondo grande al centro */
+    .logo-container {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0d131f;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Nome in font Avenir */
+    .person-name {
+      font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+      margin-bottom: 10px;
+    }
+
+    /* Dati aziendali in font piccolo */
+    .company-info {
+      font-family: 'Gurmukhi MN', 'Gurmukhi Sangam MN', sans-serif;
+      font-size: 10px;
+      color: #9ca3af;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      margin-bottom: 20px;
+    }
+
+    .company-info .company-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #00aeef;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 3px;
+    }
+
+    /* Pulsanti in basso: piccoli e quadrati con font Avenir */
+    .actions-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 100%;
+      max-width: 260px;
+      margin-bottom: 18px;
+    }
+
+    .btn-square {
+      aspect-ratio: 1;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn-square:active {
+      transform: scale(0.93);
+    }
+
+    .btn-square svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      margin-bottom: 4px;
+    }
+
+    .btn-green {
+      background-color: #25D366;
+    }
+
+    .btn-cyan {
+      background-color: #00aeef;
+    }
+
+    /* Separatore */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+      margin-bottom: 14px;
+    }
+
+    /* Link al sito in font Avenir */
+    .website-link {
+      font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .website-link svg {
+      width: 14px;
+      height: 14px;
+      fill: #38bdf8;
+    }
+
+    .website-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    
+    <!-- Logo Tondo Grande al Centro -->
+    <div class="logo-container">
+      <img src="Platò_tondo.jpg" alt="PLATÒ Srl Logo">
+    </div>
+
+    <!-- Nome in font Avenir -->
+    <div class="person-name">Maurizio Arena</div>
+    
+    <!-- Dati Societari in caratteri piccoli -->
+    <div class="company-info">
+      <div class="company-title">PLATÒ Srl</div>
+      <div>Sede legale: Via Vincenzo Tiberio, 45</div>
+      <div>00191 ROMA</div>
+      <div>P.IVA/CF 18489501009</div>
+      <div>SDI M5UXCR1</div>
+    </div>
+
+    <!-- Pulsanti piccoli e quadrati -->
+    <div class="actions-grid">
+      <a href="tel:+393355405933" class="btn-square btn-green" title="Chiama">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Chiama
+      </a>
+
+      <a href="https://wa.me/393355405933" target="_blank" class="btn-square btn-green" title="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 16.67c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.198 8.198 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.22 8.24z"/></svg>
+        WhatsApp
+      </a>
+
+      <a href="mailto:m.arena@platò.it" class="btn-square btn-green" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
+
+      <button onclick="downloadVCard()" class="btn-square btn-cyan" title="Salva Contatto">
+        <svg viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .58l2.59-2.58L17 11.41l-5 5-5-5 1.41-1.41L11 12.58V3h2v9.58z"/></svg>
+        Salva
+      </button>
+    </div>
+
+    <!-- Separatore -->
+    <div class="divider"></div>
+
+    <!-- Link Sito Web in font Avenir -->
+    <a href="https://www.platò.it" target="_blank" class="website-link">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+      </svg>
+      www.platò.it
+    </a>
+
+  </div>
+
+  <script>
+    function downloadVCard() {
+      const vcardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Maurizio Arena
+ORG:PLATÒ Srl
+TEL;TYPE=CELL:+393355405933
+EMAIL;TYPE=WORK:m.arena@platò.it
+URL:https://www.platò.it
+ADR;TYPE=WORK:;;Via Vincenzo Tiberio, 45;ROMA;;00191;Italia
+NOTE:P.IVA/CF 18489501009 - SDI M5UXCR1
+END:VCARD`;
+
+      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Maurizio_Arena_Platò.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body>
+</html>
